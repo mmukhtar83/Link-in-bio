@@ -3,66 +3,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Muhammad MukhtarLink in bio</title>
+    <title>biolink</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
     <script>
-    window.addEventListener('DOMContentLoaded',() => {
-    VANTA.BIRDS({
-     el: "#vanta",
-     mouseControls: true,
-     touchControls: true,
-     gyroControls: true,
-     minHeight: 200.00,
-     minWidth: 200.00,
-     scale: 1.00,
-     scaleMobile: 1.00,
-     backgroundAlpha: 0.0,
-     scale: 1.00,
-     scaleMobile: 1.00,
-     color2: 0xff00f0,
-     wingSpan: 40.00,
-     separation: 100.00,
-     alignment: 77.00,
-     cohesion: 5.00,
-     quantity: 1.00
+    window.addEventListener('DOMContentLoaded', () => {
+            VANTA.BIRDS({
+            el: "#vanta",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundAlpha: 0.0,
+            color2: 0xff00f0,
+            wingSpan: 40.00,
+            separation: 100.00,
+            alignment: 77.00,
+            cohesion: 5.00,
+            quantity: 1.00
+        })
+        setTimeout(() => {
+            const main = document.querySelector('main')
+            main.style.opacity = 1
+            main.style.filter = 'blur(0px)'
+        }, 1000)
     })
-
-    const main document.querySelector('main')
-    console.log('main:',main)
-}) 
+    
 </script>
 </head>
 <body>
     <div id="vanta"></div>
-    <header>
-    <img src="./Images/MMUKHTAR.jpeg">
-        <h1>@HEROSHATIO</h1>
-    </header>    
-    <UL>
-        <LI>
-           <a href="">
-            Official Website
-           </a> 
-        </LI>
-        <li>
-            <a href="https://twitter.com/muhamed_elsaid8" target="_blank">
-            <img src="./Images/Twitter.png" alt="Twitter" width="20"/>
-                Twitter
-            </a>
-        </li>
-        <li>
-            <a href="">
-            <img src="./Images/facebook.png" alt="facebook" width="20"/>
-            Facebook
-        </a>
-        <li>
-            <a href="https://github.com/mmukhtar83" target="_blank">
-                <img src="./Images/GitHub.png" alt="GitHub" width="20"/>
-                GitHub
-            </a>
-        </li>
-    </UL>
+    <main>
+        <header>
+            <img src="./Images/MMUKHTAR.jpeg"/>
+            <h1>HEROSHATIO</h1>
+        </header>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="./Images/facebook.png" alt="Facebook" width="20" />
+                    Facebook
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/muhamed_elsaid8" target="_blank">
+                    <img src="./Images/Twitter.png" alt="Twitter" width="20" />
+                    Twitter
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/mmukhtar83" target="_blank">
+                    <img src="./Images/GitHub.png" alt="GitHub" width="20" />
+                    GitHub
+                </a>
+            </li>
+        </ul>
+    </main>
 </body>
 </html>
